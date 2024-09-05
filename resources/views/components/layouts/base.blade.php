@@ -16,23 +16,30 @@
                 <div class="flex-shrink-0">
                   <img class="h-12 w-12" src="https://www.curio.nl/themes/custom/curio/favicon.ico" alt="Curio Logo">
                 </div>
-                <div class="hidden md:block">
-                  <div class="ml-10 flex items-baseline space-x-4">
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-                    <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-                    <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
-                  </div>
+                <div class="hidden md:flex ml-10 items-baseline space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+                  <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
+                  <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
                 </div>
               </div>
-              <div class="-mr-2 flex md:hidden">
-          <!-- Mobile menu, show/hide based on menu state. -->
-          <div class="md:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-              <a href="about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-              <a href="contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+              <div class="hidden md:block ml-auto">
+                <a href="/login" class="text-sm font-medium text-white hover:text-gray-300">Login</a>
+              </div>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="md:hidden" id="mobile-menu">
+              <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+                <a href="about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+                <a href="contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+              </div>
+              <div class="border-t border-gray-700 pt-4 pb-3">
+                <a href="/login" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+              </div>
             </div>
           </div>
         </nav>

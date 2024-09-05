@@ -25,14 +25,22 @@ Dit document beschrijft de conventies die we volgen in ons project om consistent
 
 ### 2.1 Utility-first CSS met Tailwind CSS
 - Gebruik van Tailwind CSS utility classes voor styling.
-- Voorbeelden: `w-1/3`, `flex`, `gap-4`, `items-start`, `text-red-600`, `font-bold`, etc.
+- Voorbeelden: 
+```js
+`w-1/3`, `flex`, `gap-4`, `items-start`, `text-red-600`, `font-bold`
+```
+etc.
+
 
 ### 2.2 Responsieve Layout
 - Gebruik van verhoudingen (`w-1/3`, `w-2/3`) om een flexibele en responsieve layout te creëren.
 
 ### 3.2 ARIA en Alt Text
 - Gebruik van `alt`-attributen in afbeeldingen om toegankelijkheid te waarborgen.
-- Voorbeeld: `<img class="mt-4" src="https://picsum.photos/id/237/400/300" alt="random img">`.
+- Voorbeeld: 
+```html
+<img class="mt-4" src="https://picsum.photos/id/237/400/300" alt="random img">
+```
 
 ## 4. Code Style
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class contactFormController extends Controller
+class ContactFormController extends Controller
 {
     public function submitForm(Request $request)
     {
